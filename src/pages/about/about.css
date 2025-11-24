@@ -1,0 +1,359 @@
+.about-hero-section {
+  background: #f6f0eb; 
+  padding: 120px 0 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.tag {
+  display: inline-block;
+  background: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8c5b3f;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2e1f18;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  font-style: italic;
+  color: #4d3a32;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 18px;
+  color: #5a4a43;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.hero-image {
+  width: 90%;
+  max-width: 430px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn {
+  background: #c48356;
+  padding: 12px 28px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.secondary-btn {
+  background: transparent;
+  padding: 12px 28px;
+  border-radius: 25px;
+  border: 2px solid #c48356;
+  color: #c48356;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-title { font-size: 36px; text-align: center; }
+  .hero-subtitle, .hero-desc { text-align: center; }
+  .hero-buttons { justify-content: center; }
+  .image-col { margin-top: 40px; }
+}
+/* secound section */
+
+.about-section {
+  background: #f5ebe4;
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.tag {
+  background: #fff;
+  color: #c46a4a;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.about-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #3e2f2b;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: #5e4841;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.mission-box {
+  margin: 25px 0;
+}
+
+.mission-box h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #3e2f2b;
+}
+
+.mission-box ul li {
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: #5e4841;
+}
+
+.learn-btn {
+  background: #d7906c;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.learn-btn:hover {
+  background: #b46a46;
+  transform: translateY(-3px);
+}
+
+.about-main-img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Animations */
+.animate-left {
+  animation: slideLeft 0.9s ease forwards;
+}
+.animate-right {
+  animation: slideRight 0.9s ease forwards;
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-title { font-size: 32px; }
+  .about-section { padding: 50px 20px; }
+  .content-col { margin-top: 30px; text-align: center; }
+  .learn-btn { width: 100%; }
+}
+/* third section */
+
+.stats-wrapper {
+  background: #f6e7dd; /* light peach */
+  padding: 80px 0;
+}
+
+.stats-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 32px;
+  min-height: 220px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.stats-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 26px rgba(0,0,0,0.12);
+}
+
+.stats-number {
+  font-size: 46px;
+  font-weight: 800;
+  color: #c86c42;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.stats-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5b4334;
+}
+
+.stats-text {
+  font-size: 15px;
+  color: #6b5a50;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-card {
+    text-align: center;
+  }
+  .stats-wrapper {
+    padding: 50px 0;
+  }
+}
+/* forth section */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap");
+
+.about-section {
+  padding: 90px 0;
+  background: #faf4ef;
+  color: #3b3b3b;
+}
+
+.about-title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 700;
+  color: #3c1d0a;
+}
+
+.testimonial-box {
+  background: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-text {
+  font-size: 26px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.therapist-img {
+  width: 320px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.stats-box {
+  background: #e9b39a;
+  margin: 40px auto;
+  padding: 35px;
+  width: 350px;
+  border-radius: 16px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.stats-box h3 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.philosophy {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.philosophy h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.philosophy p {
+  font-size: 20px;
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-title { font-size: 32px; }
+  .testimonial-text { font-size: 20px; }
+  .therapist-img { width: 250px; }
+  .stats-box { width: 100%; }
+}
+/* sixth section */
+
+.love-wrapper {
+  background: #f9f3ef;
+  padding: 80px 0;
+  text-align: center;
+  border-radius: 24px;
+  margin-top: 50px;
+}
+
+.love-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 44px;
+  color: #4d2b1c;
+  margin-bottom: 40px;
+}
+
+.love-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #5a4a42;
+}
+
+.love-list li {
+  margin-bottom: 16px;
+  background: #ffffff;
+  padding: 18px 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.love-list li:hover {
+  transform: translateY(-6px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .love-title {
+    font-size: 32px;
+  }
+  
+  .love-list li {
+    font-size: 18px;
+  }
+}
