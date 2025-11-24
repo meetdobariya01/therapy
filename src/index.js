@@ -10,6 +10,7 @@ import About from './pages/about/about';
 import Booking from './pages/booking/booking';
 import Contact from './pages/contact/contact';
 import Testimonials from './pages/testimonials/testimonials';
+import Workshop from './pages/workshop/workshop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
       <Route path="/booking" element={<Booking />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/testimonials" element={<Testimonials />} />
+      <Route path="/workshop" element={<Workshop />} />
        {/* <Route path="*" element={<Error/>} /> */}
     </Routes>
   </Router>
