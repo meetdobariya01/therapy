@@ -57,14 +57,7 @@ const About = () => {
           <Row className="align-items-center">
             {/* TEXT */}
             <Col md={6} className="text-col">
-              <motion.span
-                variants={fadeUp}
-                initial="hidden"
-                animate="show"
-                className="tag"
-              >
-                {/* Welcome to Healing Space 🌿 */}
-              </motion.span>
+        
 
               <motion.h1
                 variants={fadeUp}
@@ -72,7 +65,7 @@ const About = () => {
                 animate="show"
                 className="hero-title"
               >
-                Meet Delnaz Medora
+                 Delnaz Medora
               </motion.h1>
 
               <motion.p
@@ -114,7 +107,7 @@ const About = () => {
             {/* IMAGE */}
             <Col md={6} className="image-col text-center">
               <motion.img
-                src={"./images/hero-section.jpg"}
+                src={"./images/delnaz.png"}
                 alt="Delnaz Medora"
                 className="hero-image"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -141,7 +134,7 @@ const About = () => {
             </Col>
 
             <Col md={6} className="content-col animate-right">
-              <span className="tag">About Unwind</span>
+              {/* <span className="tag">About Unwind</span> */}
 
               <h2 className="about-title">
                 Your partner in emotional wellbeing growth
@@ -231,7 +224,7 @@ const About = () => {
             {/* Image */}
             <Col md={6} xs={12} className="text-center mt-4 mt-md-0">
               <motion.img
-                src="/images/therapist-girl.png"
+                src="/images/aboutus.jpg"
                 alt="Therapist"
                 className="therapist-img"
                 initial={{ opacity: 0, scale: 0.8 }}

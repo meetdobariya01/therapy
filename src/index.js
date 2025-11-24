@@ -11,6 +11,7 @@ import Booking from './pages/booking/booking';
 import Contact from './pages/contact/contact';
 import Testimonials from './pages/testimonials/testimonials';
 import Workshop from './pages/workshop/workshop';
+import Service from './pages/service/service';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
       <Route path="/contact" element={<Contact />} />
       <Route path="/testimonials" element={<Testimonials />} />
       <Route path="/workshop" element={<Workshop />} />
+      <Route path="/service" element={<Service />} />
        {/* <Route path="*" element={<Error/>} /> */}
     </Routes>
   </Router>

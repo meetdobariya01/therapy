@@ -1,6 +1,6 @@
 .about-hero-section {
   background: #f6f0eb; 
-  padding: 120px 0 80px;
+  padding: 20px 0 80px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -258,7 +258,7 @@
 }
 
 .therapist-img {
-  width: 320px;
+  width: 75%;
   border-radius: 22px;
   object-fit: cover;
 }

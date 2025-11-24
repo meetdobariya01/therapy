@@ -1,0 +1,140 @@
+.services-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HERO */
+
+.services-hero {
+  height: 95vh;
+  width: 100%;
+  background: url("../../../public/images/service.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+.services-hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 790px;
+  color: white;
+  padding: 0px 20px;
+}
+
+.services-hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.services-hero-content p {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+
+/* SERVICES */
+
+.services-wrapper {
+  padding: 140px 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 60px;
+  background: #faf7ff;
+}
+
+.service-card {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  height: 480px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.18);
+}
+
+.srv-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.7s;
+}
+
+.srv-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.1));
+}
+
+.service-card:hover img {
+  transform: scale(1.15);
+}
+
+.srv-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  color: white;
+}
+
+.srv-content h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.srv-content p {
+  color: #e8e8e8;
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.srv-list {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 25px;
+  line-height: 1.8rem;
+}
+
+.srv-btn {
+  padding: 14px 38px;
+  border-radius: 60px;
+  background: white;
+  border: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.srv-btn:hover {
+  transform: translateY(-5px);
+}
+
+/* SEO hidden */
+.services-seo {
+  opacity: 0;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .services-hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .service-card {
+    height: 450px;
+  }
+}
