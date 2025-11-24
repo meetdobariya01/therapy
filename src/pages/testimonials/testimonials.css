@@ -1,0 +1,86 @@
+.testimonials-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 140px 10%;
+  background: linear-gradient(135deg, #ffffff, #f4f1ff, #ece7fb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.t-heading {
+  font-size: 58px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #231f39;
+  text-align: center;
+}
+
+.t-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 34px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.t-card {
+  padding: 40px 35px;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(18px);
+  box-shadow: 0px 24px 40px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.t-card:hover {
+  transform: translateY(-6px);
+}
+
+.t-text {
+  font-size: 20px;
+  line-height: 1.55;
+  color: #2d2b35;
+  margin-bottom: 24px;
+}
+
+.t-author {
+  font-size: 18px;
+  opacity: .55;
+  display: block;
+}
+
+.t-btn {
+  margin-top: 70px;
+  padding: 18px 46px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #2c2556;
+  color: white;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.t-btn:hover {
+  opacity: .9;
+  transform: translateY(-4px);
+}
+
+/* RESPONSIVE */
+@media(max-width: 1000px){
+  .t-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 700px){
+  .t-grid{
+    grid-template-columns: 1fr;
+  }
+  .t-heading{
+    font-size: 40px;
+  }
+}

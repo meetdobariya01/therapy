@@ -1,0 +1,102 @@
+.contact-wrapper {
+  width: 100%;
+  min-height: 90vh;
+  padding: 120px 10%;
+  background: linear-gradient(to bottom right, #ffffff, #e8e4ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lux-heading {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #231f39;
+}
+
+.lux-sub {
+  margin-top: 12px;
+  font-size: 20px;
+  opacity: 0.7;
+  text-align: center;
+  max-width: 600px;
+}
+.insta-link {
+  text-decoration: none;
+  color: #4b2bb4;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.insta-link:hover {
+  opacity: 0.7;
+}
+.mail-link {
+  text-decoration: none;
+  color: #2a2260;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.mail-link:hover {
+  opacity: 0.7;
+}
+
+.contact-card {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 600px;
+  padding: 45px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(18px);
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.09);
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  font-size: 20px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  color: #232323;
+}
+
+.contact-list span {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.cta-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  background: #282249;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .lux-heading {
+    font-size: 40px;
+  }
+  .contact-card {
+    padding: 35px;
+  }
+}

@@ -1,0 +1,193 @@
+.lux-booking{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  padding:0 30px;
+  font-family: 'Cormorant Garamond', serif;
+  color:#fff;
+  background:#0d0d0d;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:160px 0;
+}
+
+.hero h1{
+  font-size:64px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.hero p{
+  opacity:.7;
+  font-size:22px;
+  margin-bottom:40px;
+}
+
+.hero-btn{
+  padding:16px 40px;
+  background:none;
+  border:1px solid gold;
+  color:gold;
+  font-size:20px;
+  cursor:pointer;
+}
+
+
+
+/* EXPERIENCE */
+.exp-section{
+  margin-top:140px;
+  text-align:center;
+}
+
+.exp-section h2{
+  font-size:44px;
+}
+
+.exp-sub{
+  opacity:.7;
+  font-size:20px;
+  margin-top:10px;
+}
+
+.exp-list{
+  margin-top:40px;
+  line-height:40px;
+  font-size:20px;
+}
+
+
+
+/* GOLD BOX */
+.gold-box{
+  margin-top:140px;
+  border:1px solid gold;
+  text-align:center;
+  padding:60px;
+  border-radius:6px;
+}
+
+.gold-box h3{
+  font-size:36px;
+}
+
+.gold-box button{
+  background:gold;
+  border:none;
+  padding:14px 32px;
+  margin-top:25px;
+}
+
+
+
+/* PLANS */
+.plans{
+  margin-top:160px;
+}
+
+.plans h2{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:60px;
+}
+
+.plans-grid{
+  display:grid;
+  gap:30px;
+  grid-template-columns:repeat(3,1fr);
+}
+
+.plan-card{
+  background: #141414;
+  border:1px solid #222;
+  padding:50px 35px;
+  text-align:center;
+}
+
+.plan-card .price{
+  display:block;
+  font-size:42px;
+  margin:20px 0;
+}
+
+.featured{
+  border-color:gold;
+  transform:scale(1.08);
+  background:#181818;
+}
+
+
+
+/* TIMELINE */
+.timeline{
+  margin-top:160px;
+}
+
+.timeline h2{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:60px;
+}
+
+.steps{
+  display:flex;
+  justify-content:space-between;
+}
+
+.step{
+  text-align:center;
+  font-size:20px;
+}
+
+.step span{
+  display:block;
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  border:1px solid gold;
+  margin:auto;
+  margin-bottom:10px;
+  padding-top:8px;
+}
+
+
+
+/* FINAL CTA */
+.final-cta{
+  text-align:center;
+  margin-top:180px;
+  padding-bottom:120px;
+}
+
+.final-cta button{
+  background:none;
+  padding:15px 40px;
+  border:1px solid gold;
+  color:gold;
+}
+
+
+/* ANIMATIONS */
+.fade{
+  animation:fadeIn 1.8s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(60px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .plans-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+}
