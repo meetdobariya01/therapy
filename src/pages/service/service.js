@@ -27,7 +27,7 @@ const Service = () => {
           >
             <h1>Therapeutic Services</h1>
             <p>
-              Personalized transformation experiences designed for deep inner
+              Personalized transformation experiences designed for deep inner this is
               healing.
             </p>
           </motion.div>
@@ -117,7 +117,7 @@ const Service = () => {
         {/* SEO */}
         <p className="services-seo">
           EFT sessions online, NLP sessions online, emotional wellness
-          workshops, group therapy programs India
+          workshops, group therapy programs India 
         </p>
       </div>
 

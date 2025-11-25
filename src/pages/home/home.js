@@ -22,7 +22,7 @@ const Home = () => {
         <Container className="hero-inner">
           <Row className="align-items-center">
             <Col lg={7}>
-              <motion.div initial="hidden" animate="show" variants={{ show: { transition: { staggerChildren: 0.12 } } }}>
+              <motion.div initial="hidden" className="container" animate="show" variants={{ show: { transition: { staggerChildren: 0.12 } } }}>
                 <motion.h1 className="hero-title" variants={fadeUp}>
                   Heal. Release. Transform.
                 </motion.h1>
@@ -40,7 +40,7 @@ const Home = () => {
                   <Button className="btn-cta ghost" href="/workshops">Explore Workshops</Button>
                 </motion.div>
 
-                <motion.div className="seo-keywords" variants={fadeUp}>
+                <motion.div className="seo-keywords text-light" variants={fadeUp}>
                   <small>SEO: EFT practitioner India • NLP coach • emotional healing therapy • book therapy session online</small>
                 </motion.div>
               </motion.div>
@@ -59,7 +59,7 @@ const Home = () => {
           <Row className="align-items-center">
             <Col md={7}>
               <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={fadeUp}>
-                <h2 className="featured-title">Featured Intro</h2>
+                <h2 className="section-heading">Featured Intro</h2>
                 <p className="featured-text">
                   Welcome to a space where you can slow down, breathe, and reconnect with yourself.
                   Delnaz uses powerful, science-backed tools that help you release emotional blocks, overcome patterns,
@@ -69,7 +69,7 @@ const Home = () => {
             </Col>
 
             <Col md={5} className="text-center mt-4 mt-md-0">
-              <motion.img src="./images/home-3.jpg" alt="session" className="featured-image w-75" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} />
+              <motion.img src="./images/delnaz.png" alt="session" className="featured-image w-50 rounded" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} />
             </Col>
           </Row>
         </Container>
@@ -142,7 +142,7 @@ const Home = () => {
                     <div className="program-price">{p.price}</div>
                   </div>
                   <p className="program-detail">{p.detail}</p>
-                  <div className="program-actions">
+                  <div className="program-actions g-3">
                     <Button className="btn-outline" href="/contact">Learn More</Button>
                     <Button className="btn-main" href="/appointment">Book</Button>
                   </div>

@@ -50,7 +50,7 @@
 .program-card { background: var(--card); padding: 20px; border-radius: 12px; box-shadow: 0 12px 30px rgba(10,10,10,0.06); display:flex; flex-direction:column; height:100%; justify-content:space-between; }
 .program-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
 .program-price { font-weight:800; color:var(--accent); }
-
+.program-actions { margin-top: 16px; display:flex; gap:12px; }
 /* HOW IT WORKS */
 .how-section { padding: 40px 0; }
 .how-card { padding: 24px; background: var(--card); border-radius: 12px; box-shadow: 0 12px 30px rgba(10,10,10,0.06); text-align:center; }
