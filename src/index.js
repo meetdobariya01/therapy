@@ -12,6 +12,7 @@ import Contact from './pages/contact/contact';
 import Testimonials from './pages/testimonials/testimonials';
 import Workshop from './pages/workshop/workshop';
 import Service from './pages/service/service';
+import Blog from './pages/blog/blog';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
       <Route path="/testimonials" element={<Testimonials />} />
       <Route path="/workshop" element={<Workshop />} />
       <Route path="/service" element={<Service />} />
+      <Route path="/blog" element={<Blog />} />
        {/* <Route path="*" element={<Error/>} /> */}
     </Routes>
   </Router>

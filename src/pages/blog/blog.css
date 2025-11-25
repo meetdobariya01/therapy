@@ -1,0 +1,170 @@
+ /* HealingInsightsLongPage.css */
+
+:root{
+  --primary: #2563eb;
+  --deep: #0f172a;
+  --muted: #6b7280;
+  --card-bg: #fff;
+  --page-bg: #f4faf6;
+}
+
+.healing-long-page {
+  background: var(--page-bg);
+  color: var(--deep);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+/* HERO band */
+.hero-band {
+  background: linear-gradient(180deg, rgba(18,52,86,0.03), rgba(255,255,255,0.0));
+  padding: 2.2rem 0 1.6rem 0;
+}
+.hero-inner {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+/* Left vertical avatar rail */
+.left-avatars {
+  width: 72px;
+  background: rgba(18,52,86,0.03);
+  border-radius: 12px;
+  padding: 12px 6px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+.avatar-thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.08);
+}
+
+/* hero layout */
+.hero-main { width: 100%; display: flex; align-items: center; }
+.hero-photo-col { padding-right: 0; flex: 0 0 42%; max-width: 42%; }
+.hero-photo-wrap { padding: 6px; border-radius: 14px; overflow: hidden; background: white; }
+.hero-photo {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 12px 34px rgba(2,6,23,0.06);
+}
+
+/* hero text */
+.hero-text-col { padding-left: 2.2rem; }
+.hero-copy { max-width: 720px; }
+.hero-title{
+  font-size: 3.2rem;
+  margin: 0;
+  font-weight: 700;
+  color: #17304b;
+  line-height: 1.02;
+}
+.hero-sub {
+  color: var(--muted);
+  margin-top: 0.7rem;
+  font-size: 1.05rem;
+}
+
+/* Buttons */
+.primary-cta {
+  background: linear-gradient(90deg, var(--primary), #1e40af);
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(37,99,235,0.15);
+}
+.outline-cta {
+  background: transparent;
+  border: 1px solid rgba(23,48,75,0.08);
+  color: var(--deep);
+  padding: 11px 18px;
+  border-radius: 10px;
+}
+
+/* Specialties scroll row */
+.specialties-section { padding-top: 1rem; padding-bottom: 1rem; }
+.specialties-scroll {
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 6px;
+}
+.special-card-wrap { min-width: 280px; max-width: 320px; flex: 0 0 auto; }
+.special-card {
+  border-radius: 20px;
+  min-height: 220px;
+  width: 100%;
+  box-shadow: 0 12px 30px rgba(2,6,23,0.06);
+  border: none;
+  background: #ffffff;
+}
+.spec-title {
+  font-size: 1.25rem;
+  color: #16324a;
+  margin-bottom: 0.45rem;
+  font-weight: 700;
+}
+.spec-desc { color: var(--muted); line-height: 1.5; }
+
+/* Articles */
+.articles-section { padding-top: 1.6rem; padding-bottom: 3rem; }
+.article-card .card {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 10px 28px rgba(2,6,23,0.06);
+}
+.article-h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #0f2a42;
+}
+.article-long {
+  white-space: pre-wrap;
+  color: #374151;
+  line-height: 1.7;
+}
+
+/* Sticky aside */
+.sticky-aside { position: sticky; top: 96px; }
+.aside-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(2,6,23,0.05);
+}
+.tools-list { list-style: none; padding-left: 0; margin: 8px 0 0 0; color: var(--muted); }
+.tools-list li { padding: 6px 0; }
+
+/* Footer CTA */
+.footer-cta-wrap { padding-top: 0; }
+.footer-cta {
+  background: linear-gradient(90deg, rgba(37,99,235,0.03), rgba(255,255,255,0));
+  padding: 18px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+/* Responsive rules */
+@media (max-width: 991.98px) {
+  .hero-photo-col { display: none; } /* hide big left photo on tablet/smaller */
+  .left-avatars { display: none; }
+  .hero-text-col { padding-left: 0; }
+  .hero-title { font-size: 2rem; }
+  .special-card-wrap { min-width: 230px; }
+}
+
+@media (max-width: 575.98px) {
+  .hero-title { font-size: 1.5rem; }
+  .hero-sub { font-size: 0.95rem; }
+  .article-h3 { font-size: 1.1rem; }
+  .special-card-wrap { min-width: 200px; }
+}
+
+/* small visual helpers */
+a:focus, button:focus { outline: 3px solid rgba(37,99,235,0.12); outline-offset: 2px; }
